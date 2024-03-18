@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddbookActivity">
+
+    <EditText
+        android:id="@+id/Addisbn"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="564dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="ISBN"
+        app:layout_constraintBottom_toTopOf="@+id/AddBookButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Addprice"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="価格"
+        app:layout_constraintBottom_toTopOf="@+id/Addisbn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Addpublish"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="出版社"
+        app:layout_constraintBottom_toTopOf="@+id/Addprice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Addauthor"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="著者"
+        app:layout_constraintBottom_toTopOf="@+id/Addpublish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Addtitle"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="タイトル"
+        app:layout_constraintBottom_toTopOf="@+id/Addauthor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/AddBookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onAddBookButtonClicked"
+        android:text="追加"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Addisbn" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="32dp"
+        android:text="書籍を追加する"
+        app:layout_constraintBottom_toTopOf="@+id/Addtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

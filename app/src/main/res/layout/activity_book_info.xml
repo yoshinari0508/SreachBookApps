@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onLikeBookButtonClicked"
+    tools:context=".BookInfoActivity">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="45dp"
+        android:text="タイトル"
+        app:layout_constraintBottom_toTopOf="@+id/authorView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/authorView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="45dp"
+        android:text="著者"
+        app:layout_constraintBottom_toTopOf="@+id/publisherView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/publisherView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="45dp"
+        android:text="出版社"
+        app:layout_constraintBottom_toTopOf="@+id/priceView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/priceView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="45dp"
+        android:text="価格"
+        app:layout_constraintBottom_toTopOf="@+id/isbnView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/isbnView"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="42dp"
+        android:text="ISBN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceView" />
+
+    <Button
+        android:id="@+id/LikeBookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="onLikeBookButtonClicked"
+        android:text="追加する"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isbnView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
